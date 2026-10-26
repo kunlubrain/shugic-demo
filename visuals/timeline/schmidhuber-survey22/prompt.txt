@@ -1,0 +1,80 @@
+!addimage
+
+1676
+    Gottfried Wilhelm Leibniz
+    Chain rule for backward credit assignment, a central ingredient of deep learning.
+
+1805
+    Adrien-Marie Legendre
+    Associated with the method of least squares.
+
+1795
+    Johann Carl Friedrich Gauss
+    Associated with the method of least squares and pattern recognition through astronomical data; rediscovered the dwarf planet Ceres in 1801.
+
+1847
+    Augustin-Louis Cauchy
+    Gradient descent (GD), a basic tool of deep learning.
+
+1925
+    Wilhelm Lenz (https://www.physik.uni-rostock.de/storages/uni-rostock/Alle_MNF/Physik/Historisches/Kalenderblaetter_Physik/KB_2013_06_Lenz/Lenz_Hamburg_Physik_767_1064.png)
+    Ernst Ising (https://www.physik.tu-dresden.de/itp/members/kobe/isingphbl/ising1.jpg)
+    First recurrent network architecture: the Lenz-Ising model.
+
+1943
+    Warren McCulloch
+    Walter Pitts
+    Developed an early mathematical model of artificial neurons.
+
+1948
+    Alan Turing
+    Published ideas related to evolving recurrent neural networks (RNNs).
+
+1956
+    Stephen Cole Kleene
+    Referenced in connection with the Lenz-Ising model and early recurrent network concepts.
+
+1958
+    Frank Rosenblatt
+    Multilayer perceptron (MLP); initially, only the last layer was learned, so it was not yet deep learning.
+
+1961
+    Karl Steinbuch
+    Associated with early neural network research.
+
+1961
+    Roger David Joseph
+    Associated with early neural network research.
+
+1960
+    Henry J. Kelley
+    Precursor of backpropagation in control theory.
+
+1961
+    Arthur Bryson (https://a2c2.org/files/a2c2/styles/responsive_4_5_760w/public/images/contacts/Arthur_E._Bryson.jpeg?h=a322bc7e&itok=4r7PBOwl)
+    Referenced in connection with backpropagation and control theory.
+
+1962
+    Stuart Dreyfus (https://ieor.berkeley.edu/wp-content/uploads/2017/11/Stuart_Dreyfus_UC_Berkeley.jpg)
+    Referenced in connection with backpropagation and control theory.
+
+1965
+    Alexey Ivakhnenko
+    Valentin Lapa
+    First deep learning in deep MLPs that learn internal representations of input data.
+
+1967–1968
+    Shun-ichi Amari
+    Deep learning by stochastic gradient descent for deep MLPs.
+
+1970
+    Seppo Linnainmaa
+    Backpropagation or reverse-mode automatic differentiation.
+
+1972
+    Paul Werbos
+    Published research on learning in recurrent neural networks, building on the earlier Lenz-Ising model.
+
+1979
+    Kunihiko Fukushima (https://personalpage.flsi.or.jp/fukushima/files/FukushimaImg.jpg)
+    Deep convolutional neural network architecture; 1969: rectified linear units (ReLUs). Both are noted as widely used.
