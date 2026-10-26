@@ -1,0 +1,83 @@
+!addimage
+
+1676
+    Gottfried Wilhelm Leibniz
+    Invented the chain rule, providing the core mathematical foundation later used for backpropagation.
+
+1795–1805
+    Carl Friedrich Gauss
+    Adrien-Marie Legendre
+    Developed early mathematical approaches (least squares) equivalent to a 2-layer neural network predicting the next element in a sequence.
+
+1925
+    Ernst Ising (https://www.physik.tu-dresden.de/itp/members/kobe/isingphbl/ising1.jpg)
+    Wilhelm Lenz (https://www.physik.uni-rostock.de/storages/uni-rostock/Alle_MNF/Physik/Historisches/Kalenderblaetter_Physik/KB_2013_06_Lenz/Lenz_Hamburg_Physik_767_1064.png)
+    Published the foundational Lenz-Ising recurrent network architecture.
+
+1965
+    Alexey Ivakhnenko
+    Introduced the first working deep learning algorithm for Multilayer Perceptrons (MLPs) with arbitrary hidden layers, training them layer-by-layer via regression analysis without using a backward pass.
+
+1967–1968
+    Shun-Ichi Amari
+    Developed end-to-end training of deep neural networks with hidden layers using stochastic gradient descent (SGD) to learn internal representations.
+
+1969
+    Marvin Minsky
+    Seymour Papert
+    Co-authored Perceptrons, showcasing the fundamental performance limitations of shallow neural networks lacking hidden layers.
+
+1971
+    Alexey Ivakhnenko
+    Described an early 8-layer deep learning neural network trained through incremental growth, regression analysis, and validation pruning.
+
+1972
+    Shun-Ichi Amari
+    Formulated the first published learning artificial recurrent neural network (RNN) by making the Lenz-Ising architecture adaptive through Hebbian correlation weight modifications.
+
+1975
+    Sam Edwards
+    Philip Warren Anderson
+    Developed the general Edwards-Anderson model utilizing random connections to dictate network dynamics.
+
+1978
+    Stephen Grossberg
+    Introduced a Lyapunov functional for the Additive Model of neural networks to formally prove system convergence.
+
+1982
+    John Hopfield
+    Republished Amari's adaptive 1972 network layout (popularized as the Hopfield Network), introducing an analysis of storage capacity and a localized Lyapunov function optimized for sequential neuron updates.
+
+1983
+    Stephen Grossberg
+    Co-authored a paper detailing a Lyapunov function explicitly proving convergence for the Additive Model (later adopted as the "Hopfield model").
+
+1984
+    John Hopfield
+    Published an analog variation of the network model that expanded upon Grossberg's earlier work on the Additive Model.
+
+1985
+    Geoffrey Hinton
+    Terrence Sejnowski
+    Co-authored the landmark Boltzmann Machine paper focused on training internal representations inside hidden layers.
+
+1986
+    David Rumelhart
+    Geoffrey Hinton
+    Demonstrated through experimental analysis that the backpropagation algorithm successfully yields useful internal representations in hidden network layers.
+
+1991
+    Sepp Hochreiter
+    Formally identified and analyzed the fundamental vanishing and exploding gradient problems in recurrent neural networks, establishing the core theoretical foundation for long short-term memory (LSTM) architectures.
+
+1991
+    Jürgen Schmidhuber
+    Unnormalized Linear Transformer (ULTRA)
+
+2006
+    Geoffrey Hinton
+    Developed a highly influential layer-wise pre-training methodology for optimizing deep neural networks.
+
+2007
+    Sepp Hochreiter
+    Accomplished the first successful application of deep learning (via LSTM architectures) directly to the problem of protein structure folding.
