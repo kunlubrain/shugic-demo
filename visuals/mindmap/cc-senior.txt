@@ -1,0 +1,41 @@
+Senior AI Engineering Knowledge for Claude Code
+    Mental Model
+        Agent loop: model plans, calls tools, reads results, repeats until done. (#agent-loop)
+        Context window is the scarce resource: quality drops as it fills. (#context)
+        CLAUDE.md is advisory, hooks and permissions are deterministic. (#hooks #permissions)
+    Context Engineering
+        Keep CLAUDE.md short, use @imports, nested files and skills for detail. (#claude-md #skills)
+        Clear or compact between tasks, use subagents so searches stay out of main context.
+        Watch /context to see what MCP servers and files cost. (#tokens)
+    Verification First
+        Give Claude a way to check itself: tests, typecheck, linter, screenshots. (#testing)
+        Wire checks into hooks so failures feed back automatically. (#hooks)
+        Review diffs yourself, never trust “done” without evidence.
+    Workflow Patterns
+        Explore, plan, implement, commit: use plan mode for anything non-trivial. (#plan-mode)
+        Write the test first, then let Claude iterate until it passes. (#tdd)
+        Small scoped tasks beat one giant prompt.
+    Extensibility
+        MCP for external systems, skills for repeatable procedures, subagents for isolation. (#mcp #skills #subagents)
+        Custom slash commands for team prompts, plugins to share them.
+        Prefer a CLI tool Claude already knows over a new MCP server when possible.
+    Scaling and Automation
+        claude -p in CI and cron, with restricted --allowedTools and --max-turns. (#ci #headless)
+        Parallel sessions in separate git worktrees to avoid edit collisions. (#worktrees)
+        Fan-out migrations: coordinator lists work, workers handle batches. (#multi-agent)
+    Security and Permissions
+        Allowlist commands, deny secrets and .env, sandbox risky runs. (#security)
+        Treat web pages, issues and tool output as untrusted input (prompt injection). (#prompt-injection)
+        Never run unattended with broad permissions on production credentials.
+    Cost and Performance
+        Pick the model per task: cheaper for routine edits, stronger for planning. (#cost)
+        Prompt caching rewards stable prefixes, so avoid churning CLAUDE.md mid-session. (#caching)
+        Track token usage per run in CI.
+    Failure Modes
+        Overengineering and scope creep: constrain the task in the prompt.
+        Confident but wrong code: demand tests and evidence.
+        Context rot in long sessions: /compact, /rewind or restart with a summary. (#context-rot)
+    Team Practice
+        Commit .claude/settings.json, .mcp.json and CLAUDE.md to the repo. (#team)
+        Update CLAUDE.md whenever Claude repeats the same mistake.
+        Treat prompts, hooks and skills as code: review and version them.  (#versioning)
