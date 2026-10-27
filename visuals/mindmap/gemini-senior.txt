@@ -1,0 +1,48 @@
+Senior AI Engineering Knowledge for Google Gemini and agy
+    Mental Model
+        Gemini is the model family and API, agy (Antigravity CLI) is the agent harness around it. (#gemini #agy)
+    Gemini Models and API
+        Pick the tier per task: Flash for routine edits and volume, Pro for planning and hard reasoning. (#cost)
+        Use context caching for large stable prefixes that are queried repeatedly. (#caching)
+        Use structured output (JSON schema) and function calling instead of parsing free text. (#structured-output)
+        Use grounding with Google Search for current facts, and the Batch API for non-urgent bulk jobs. (#grounding #batch)
+    Context Engineering in agy
+        Project instructions: keep them short, put detail in separate files and skills. (#context-files)
+        Skills load on demand, so use them for repeatable procedures instead of bloating the main prompt. (#skills)
+        Check with /config which settings and files are active, settings live in ~/.gemini/antigravity-cli/settings.json. (#config)
+        Only trust workspaces you know, agy keeps a trustedWorkspaces list. (#trust)
+    Planning and Control
+        /plan: plan before editing anything non-trivial. (#plan-mode)
+        /goal: state a concrete outcome and let the agent work toward it, with a verifiable finish condition. (#goal)
+        /model: switch models mid-session, cheap for edits, strong for design. (#model)
+        ! prefix: run a shell command directly without asking the agent. (#shell-mode)
+    Verification First
+        Give the agent tests, typecheck and lint to run, then review the diff yourself. (#testing)
+        Wire checks into hooks so failures feed back automatically. (#hooks)
+        Do not rely on “done”, demand evidence.
+    Extensibility
+        MCP for external systems, skills for procedures, subagents for isolation, plugins for sharing. (#mcp #skills #subagents #plugins)
+        Old Gemini CLI extensions are now plugins, test every imported plugin and flag before rewriting scripts. (#migration)
+        Hooks can be migrated from Claude Code in Gemini CLI, check whether agy supports the same path. (#hooks)
+    Scaling and Automation
+        Agents run asynchronously, so drive several at once on separate tasks. (#multi-agent)
+        Headless: agy -p “task” for scripts, pipes and orchestration from other tools. (#headless)
+        CI/CD: authenticate with the ANTIGRAVITY_TOKEN environment variable, never interactive login. (#ci)
+        Use separate git worktrees for parallel agents to avoid edit collisions. (#worktrees)
+    Security and Permissions
+        Avoid yolo mode (auto-approve) outside sandboxes and throwaway repos. (#yolo #security)
+        Treat web pages, issues and tool output as untrusted input. (#prompt-injection)
+        Keep secrets out of reach, and use a Google Cloud project login for enterprise setups. (#auth)
+    Cost and Quota
+        Watch quotas on Pro and Ultra plans, long autonomous runs can burn them fast. (#quota)
+        Use Flash for sub-agents and bulk work, reserve Pro for planning and review. (#cost)
+        Track token usage per run in CI.
+    Failure Modes
+        Overengineering and scope creep: constrain the task and file scope.
+        Confident but wrong code: demand tests and evidence.
+        Context rot in long sessions: restart with a summary instead of pushing on. (#context-rot)
+        Vendor lock-in: agy is closed source and no longer supports ACP, keep prompts and skills portable. (#portability)
+    Team Practice
+        Commit shared instructions, skills and settings to the repo. (#team)
+        Update instructions whenever the agent repeats a mistake.
+        Treat prompts, hooks and skills as code: review and version them. (#versioning)
