@@ -19,7 +19,6 @@ Senior AI Engineering Knowledge for Google Gemini and agy
     Verification First
         Give the agent tests, typecheck and lint to run, then review the diff yourself. (#testing)
         Wire checks into hooks so failures feed back automatically. (#hooks)
-        Do not rely on “done”, demand evidence.
     Extensibility
         MCP for external systems, skills for procedures, subagents for isolation, plugins for sharing. (#mcp #skills #subagents #plugins)
         Old Gemini CLI extensions are now plugins, test every imported plugin and flag before rewriting scripts. (#migration)
@@ -41,7 +40,6 @@ Senior AI Engineering Knowledge for Google Gemini and agy
         Overengineering and scope creep: constrain the task and file scope.
         Confident but wrong code: demand tests and evidence.
         Context rot in long sessions: restart with a summary instead of pushing on. (#context-rot)
-        Vendor lock-in: agy is closed source and no longer supports ACP, keep prompts and skills portable. (#portability)
     Team Practice
         Commit shared instructions, skills and settings to the repo. (#team)
         Update instructions whenever the agent repeats a mistake.
